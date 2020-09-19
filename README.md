@@ -1,4 +1,4 @@
-# Nekofar Nekofar
+# Nekofar Tap
 
 ## How do I install these formulae?
 `brew install nekofar/tap/<formula>`
