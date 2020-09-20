@@ -18,6 +18,22 @@ class ZshGitFlowAvh < Formula
     pkgshare.install "zsh-git-flow-avh.zsh"
   end
 
+  def caveats
+    <<~EOS
+      To activate plugin, add the following at the end of your .zshrc:
+
+        source #{HOMEBREW_PREFIX}/share/zsh-git-flow-avh/zsh-git-flow-avh.zsh
+
+      If you prefer to manage the package with Homebrew but load it with
+      a plugin manager, use your plugin manager to load the above path
+      rather than `source`ing it.
+
+      Then to activate plugin in already open sessions, restart zsh:
+
+        exec zsh
+    EOS
+  end
+
   test do
     assert_match "1",
       shell_output("zsh -c '. #{pkgshare}/zsh-git-flow-avh.zsh' && echo $(alias | grep gfli | wc -l)'")
