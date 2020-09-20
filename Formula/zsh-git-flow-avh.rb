@@ -9,6 +9,8 @@ class ZshGitFlowAvh < Formula
   head 'https://github.com/nekofar/zsh-git-flow-avh.git', branch: 'master'
   license 'MIT'
 
+  bottle :unneeded
+
   depends_on 'zsh' => :recommended
   depends_on 'git-flow-avh'
 
