@@ -4,6 +4,8 @@
 class ZshGitLfs < Formula
   desc "This plugin adds short aliases for the git-lfs commands"
   homepage "https://github.com/nekofar/zsh-git-lfs"
+  url "https://github.com/nekofar/zsh-git-lfs/archive/v1.0.1.tar.gz"
+  sha256 "c9c1dcb0e4c3c6f8c72e3e8468e442c2f4525c9fc6c953816d3ed022d5bdb0a3"
   license "MIT"
   head "https://github.com/nekofar/zsh-git-lfs.git"
 
