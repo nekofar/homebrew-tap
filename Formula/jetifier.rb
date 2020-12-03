@@ -16,7 +16,6 @@ class Jetifier < Formula
     rm_f Dir["bin/*.bat"]
     libexec.install "bin", "lib"
     bin.install_symlink libexec/"bin/jetifier-standalone" => "jetifier"
-    bin.env_script_all_files libexec/"bin", Language::Java.overridable_java_home_env
   end
 
   test do
