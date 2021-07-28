@@ -4,8 +4,8 @@
 class Jetifier < Formula
   desc "This tool migrates support libraries to equivalent AndroidX packages"
   homepage "https://developer.android.com/studio/command-line/jetifier"
-  url "https://dl.google.com/dl/android/studio/jetifier-zips/1.0.0-beta09/jetifier-standalone.zip"
-  sha256 "91986b8eb159914e7ec5fb3f6a159c182d7d4cd278a632385b2df9d3af39ddf1"
+  url "https://dl.google.com/dl/android/studio/jetifier-zips/1.0.0-beta10/jetifier-standalone.zip"
+  sha256 "38186db9c9d1b745890b3d35c0667da1cac146ceb3c26aae5bf0802119472c1b"
   license "Apache-2.0"
 
   bottle :unneeded
