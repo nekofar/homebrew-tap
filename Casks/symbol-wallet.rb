@@ -6,7 +6,7 @@ cask "symbol-wallet" do
       verified: "https://github.com/symbol/desktop-wallet/"
   name "Symbol Desktop Wallet"
   desc "Client for Symbol to manage accounts, mosaics, namespaces, and issue transaction"
-  homepage "https://symbolplatform.com"
+  homepage "https://symbolplatform.com/"
 
   livecheck do
     url :url
