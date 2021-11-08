@@ -7,5 +7,11 @@ cask "fairy-wallet" do
   desc "Ledger Nano S compatible wallet for EOS"
   homepage "https://github.com/tarassh/fairy-wallet/"
 
+  livecheck do
+    url :url
+    strategy :git
+    regex(/^v?(\d+(?:\.\d+)*.*)$/i)
+  end
+
   app "FairyWallet.app"
 end
