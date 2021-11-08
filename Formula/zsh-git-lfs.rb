@@ -9,8 +9,6 @@ class ZshGitLfs < Formula
   license "MIT"
   head "https://github.com/nekofar/zsh-git-lfs.git"
 
-  bottle :unneeded
-
   depends_on "git-lfs"
   depends_on "zsh" => :recommended
 
