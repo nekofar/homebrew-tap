@@ -4,11 +4,7 @@ class HiwebCli < Formula
   url "https://github.com/nekofar/hiweb-cli/releases/download/v1.0.0-alpha.6/hiweb.phar"
   sha256 "63d2c57de3636fbbf2432a6c04b466019faf2183949434994ed8ed05e37f259e"
   license "MIT"
-
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
+  head "https://github.com/nekofar/hiweb-cli.git", branch: "master"
 
   depends_on "geckodriver"
   depends_on "php"
