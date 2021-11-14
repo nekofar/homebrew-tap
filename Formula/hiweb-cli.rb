@@ -5,12 +5,17 @@ class HiwebCli < Formula
   sha256 "d284e10f38a5741be38327d12795ff6971074635ba50531fd1ea54298be9e2d1"
   license "MIT"
 
-  depends_on "chromedriver"
   depends_on "geckodriver"
   depends_on "php"
 
   def install
     bin.install "hiweb.phar" => "hiweb"
+  end
+
+  def caveats
+    <<~EOS
+      To use the HiWeb CLI, install the chromedriver cask.
+    EOS
   end
 
   test do
