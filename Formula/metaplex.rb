@@ -15,6 +15,8 @@ class Metaplex < Formula
 
   def install
     system "yarn", "install", "--cwd", "#{buildpath}/js/"
+    system "tree", "#{buildpath}/js/"
+    system "tree", "#{libexec}"
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
