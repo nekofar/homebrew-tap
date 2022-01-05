@@ -9,11 +9,12 @@ class MetaplexCli < Formula
   head "https://github.com/metaplex-foundation/metaplex.git", branch: "master"
 
   depends_on "node"
+  depends_on "yarn"
   depends_on "typescript"
   depends_on "ts-node"
 
   def install
-    system "/usr/local/bin/yarn", "install", "--non-interactive", "--no-progress", "--silent", "--cwd", "./js/"
+    system "yarn", "install", "--cwd", "./js/"
   end
 
   test do
