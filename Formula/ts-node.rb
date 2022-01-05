@@ -1,7 +1,7 @@
 require "language/node"
 
 class TsNode < Formula
-  desc "TypeScript execution and REPL for node.js, with source map and native ESM support."
+  desc "TypeScript execution and REPL for node, with source map and native ESM support"
   homepage "https://typestrong.org/ts-node"
   url "https://registry.npmjs.org/ts-node/-/ts-node-10.4.0.tgz"
   sha256 "b0fd3485a6177e27c4d7690bbd91499997c15b4839179e60539e6a45dc15d4bf"
