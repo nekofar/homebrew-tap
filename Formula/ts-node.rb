@@ -13,6 +13,8 @@ class TsNode < Formula
 
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
+
+    libexec.install Dir["*"]
     bin.install_symlink "#{libexec}/dist/bin.js" => "ts-node"
     bin.install_symlink "#{libexec}/dist/bin-script-deprecated.js" => "ts-script"
     bin.install_symlink "#{libexec}/dist/bin-script.js" => "ts-node-script"
