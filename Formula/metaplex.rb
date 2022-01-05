@@ -15,7 +15,7 @@ class Metaplex < Formula
 
   def install
     cd "js" do
-      system "yarn", "install"
+      system "yarn", "install", "--verbose"
     end
 
     prefix.install Dir["*"]
