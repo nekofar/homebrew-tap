@@ -41,4 +41,4 @@ jobs:
         key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
         restore-keys: ${{ runner.os }}-rubygems-
         
-    - run: brew install nekofar/tap/metaplex
+    - run: brew install --verbose --debug nekofar/tap/metaplex
