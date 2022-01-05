@@ -1,6 +1,6 @@
 require "language/node"
 
-class TsNode < Formula
+class MetaplexCli < Formula
   desc "Protocol and application framework for decentralized NFT minting, storefronts, and sales."
   homepage "https://metaplex.com/"
   url "https://github.com/metaplex-foundation/metaplex/archive/refs/tags/v1.0.0.tar.gz"
