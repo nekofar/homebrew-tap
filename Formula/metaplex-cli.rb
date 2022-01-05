@@ -14,7 +14,7 @@ class MetaplexCli < Formula
   depends_on "ts-node"
 
   def install
-    system "yarn", "install", "--cwd", "./js/"
+    system "yarn", "install", "--cwd", "#{buildpath}/js/"
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
