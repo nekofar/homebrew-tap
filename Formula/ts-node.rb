@@ -8,10 +8,6 @@ class TsNode < Formula
   license "MIT"
   head "https://github.com/TypeStrong/ts-node", branch: "main"
 
-  bottle do
-    sha256 cellar: :any_skip_relocation, all: "9e21cc29d7cc58885cd8f3fff15000b4d7aeb304e7b6725b4d4329a8504a9763"
-  end
-
   depends_on "node"
 
   def install
