@@ -18,7 +18,7 @@ class Metaplex < Formula
       system "yarn", "install"
     end
     prefix.install Dir["*"]
-    bin.install Dir["#{prefix}/js/packages/cli/src/candy-machine-cli.ts"] => "metaplex"
+    bin.install_symlink Dir["#{prefix}/js/packages/cli/src/candy-machine-cli.ts"] => "metaplex"
   end
 
   test do
