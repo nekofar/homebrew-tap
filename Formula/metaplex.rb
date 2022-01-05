@@ -1,6 +1,6 @@
 require "language/node"
 
-class MetaplexCli < Formula
+class Metaplex < Formula
   desc "A framework for decentralized NFT minting, storefronts, and sales"
   homepage "https://metaplex.com/"
   url "https://github.com/metaplex-foundation/metaplex/archive/refs/tags/v1.0.0.tar.gz"
