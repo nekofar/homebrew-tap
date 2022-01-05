@@ -1,8 +1,5 @@
 name: Manual workflow
 
-env:
-  INSTALL_LINUXBREW_PATH: /home/linuxbrew/.linuxbrew
-
 on:
   workflow_dispatch:
     inputs:
@@ -10,6 +7,9 @@ on:
         description: 'Formula to install'
         default: ''
         required: true
+
+env:
+  INSTALL_LINUXBREW_PATH: /home/linuxbrew/.linuxbrew
 
 jobs:
   install:
