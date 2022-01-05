@@ -14,10 +14,10 @@ class Metaplex < Formula
   depends_on "yarn"
 
   def install
-    system "yarn", "install", "--cwd", "#{buildpath}/js/"
-    system "ls -l", "#{buildpath}/js/"
-    system "ls -l", "#{libexec}"
-    bin.install_symlink Dir["#{libexec}/bin/*"]
+    cd "js" do
+      system "yarn", "install"
+    end
+    prefix.install Dir["*"]
   end
 
   test do
