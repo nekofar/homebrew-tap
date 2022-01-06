@@ -20,7 +20,12 @@ class Metaplex < Formula
 
     prefix.install Dir["*"]
 
-    bin.install_symlink "#{prefix}/js/packages/cli/src/candy-machine-cli.ts" => "metaplex"
+    if build.head?
+      bin.install_symlink "#{prefix}/js/packages/cli/src/candy-machine-v1-cli.ts" => "metaplex-v1"
+      bin.install_symlink "#{prefix}/js/packages/cli/src/candy-machine-v2-cli.ts" => "metaplex"
+    else
+      bin.install_symlink "#{prefix}/js/packages/cli/src/candy-machine-cli.ts" => "metaplex"
+    end
   end
 
   test do
