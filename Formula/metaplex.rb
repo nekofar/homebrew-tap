@@ -22,6 +22,8 @@ class Metaplex < Formula
 
     if build.head?
       bin.install_symlink "#{prefix}/js/packages/cli/src/candy-machine-v1-cli.ts" => "metaplex-v1"
+
+      chmod 0555, "#{prefix}/js/packages/cli/src/candy-machine-v2-cli.ts"
       bin.install_symlink "#{prefix}/js/packages/cli/src/candy-machine-v2-cli.ts" => "metaplex"
     else
       bin.install_symlink "#{prefix}/js/packages/cli/src/candy-machine-cli.ts" => "metaplex"
