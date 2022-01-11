@@ -31,6 +31,6 @@ class Metaplex < Formula
   end
 
   test do
-    system "#{bin}/candy-machine-cli", "--version"
+    system "#{bin}/metaplex", "--version"
   end
 end
