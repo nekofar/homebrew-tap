@@ -5,7 +5,7 @@ cask "httpie" do
   url "https://github.com/httpie/desktop/releases/download/v#{version}/HTTPie-#{version}.dmg",
       verified: "github.com/httpie/desktop/"
   name "HTTPie"
-  desc "HTTPie for Desktop"
+  desc "It's HTTPie for Desktop"
   homepage "https://httpie.org/"
 
   livecheck do
